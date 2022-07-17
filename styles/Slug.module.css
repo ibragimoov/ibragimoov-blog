@@ -56,6 +56,18 @@
   object-fit: cover;
 }
 
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
 .blog code {
   font-size: 1.2rem;
   background: rgb(55, 55, 55);

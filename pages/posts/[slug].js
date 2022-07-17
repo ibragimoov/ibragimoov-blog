@@ -45,10 +45,12 @@ export default function BlogPost({ post }) {
             <h2 className='blog-title'>{post.title}</h2><br/>
             <img src={post.coverPhoto.url} className={styles.cover} alt="coverPhoto" />
             <div className={styles.title}>
-                <img src={post.author.url} alt="author-photo"/>
-                <div className={styles.authtext}>
+                <div className={styles.author}>
+                    <img src={post.author.avatar.url} alt="author-photo"/>
+                    <div className={styles.authtext}>
                     <h6>By {post.author.name}</h6>
                     <h6 className={styles.date}>{post.datePublished}</h6>
+                </div>
                 </div>
             </div>
             <div className={styles.content-post}>
@@ -60,7 +62,7 @@ export default function BlogPost({ post }) {
 
 export async function getStaticPaths() {
     const { posts } = await graphcms.request(slugList)
-    console.log(posts)
+
     return {
         paths: posts.map(post => ({ params: { slug: post.slug }})),
         fallback: false
