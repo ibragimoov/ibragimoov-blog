@@ -5,7 +5,7 @@ export default function Card({ title, coverPhoto, author, datePublished, slug })
 
     return (
         <div className={styles.card}>
-            <Link href={'/post/' + slug}>
+            <Link href={'/posts/' + slug}>
                 <div className='styles.imgContainer'>
                     <img src={coverPhoto.url} />
                 </div>
