@@ -2,9 +2,28 @@
   padding-top: 1rem;
 }
 
+.content-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 2rem;
+}
+
 .title h2 {
   padding-top: 1rem;
   padding-bottom: 2rem;
+}
+
+.blog h2 {
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .authdetails {
@@ -51,10 +70,26 @@
   .blog {
     margin: 0rem 2rem;
   }
+  .blog h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
   .content {
     width: 100%;
   }
   .content img {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    align-items: center;
+    width: auto;
+  }
+
+  .blog h2 {
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
