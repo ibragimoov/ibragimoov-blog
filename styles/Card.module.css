@@ -72,4 +72,8 @@
     .card {
         margin: 1rem;
     }
+
+    .author {
+        left: 30px;
+    }
 }
