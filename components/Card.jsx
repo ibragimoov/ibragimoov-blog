@@ -20,9 +20,12 @@ export default function Card({
                         <div className={styles.author}>
                             <img src={author.avatar.url} alt="author-photo" />
                             <h3>{author.name}</h3>
-                        </div>
-                        <div>
-                            <div className={styles.data}>{datePublished}</div>
+
+                            <div>
+                                <div className={styles.data}>
+                                    {datePublished}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
