@@ -74,6 +74,10 @@
     }
 
     .author {
-        left: 26.613px;
+        /* left: 26.613px; */
+    }
+
+    .data {
+        margin-left: 2rem;
     }
 }
