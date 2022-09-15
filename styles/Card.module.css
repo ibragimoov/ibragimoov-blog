@@ -1,65 +1,56 @@
 .card {
-  border-radius: 2rem;
-  overflow: hidden;
-  box-shadow: 15px 20px 40px rgba(216, 211, 211, 0.4);
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 15px 20px 40px rgba(216, 211, 211, 0.4);
+    transition: 0.5s all;
 }
+
+.card:hover {
+    box-shadow: 15px 20px 40px rgba(216, 211, 211, 0.6);
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
 .card h2 {
-  padding: 0.5rem 0rem;
+    padding: 0.5rem 0rem;
 }
 .card h3 {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .imgContainer {
-  position: relative;
-  width: 100%;
-}
-
-.card img:hover {
-  opacity: 0.8;
+    position: relative;
+    width: 100%;
 }
 
 .card img {
-  width: 100%;
-  height: 15rem;
-  object-fit: cover;
-  cursor: pointer;
-  transition: all 0.5s ease;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0rem;
 }
 
 .text {
-  padding: 1rem 3rem;
-  justify-content: space-between;
-  align-items: center;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .author {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 .author img {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-}
-
-@media (max-width: 768px) {
-  .card {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    margin: 0;
-  }
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
 }

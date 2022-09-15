@@ -1,14 +1,28 @@
 .title h1 {
-  color: rgb(39, 39, 39);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem;
-  font-size: 2rem;
+    color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    font-size: 2rem;
 }
 
 .main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    justify-content: center;
+}
+
+@media (max-width: 1342px) {
+    .main {
+        grid-template-columns: repeat(2, 400px);
+    }
+}
+
+@media (max-width: 890px) {
+    .main {
+        grid-template-columns: repeat(1, 400px);
+    }
 }
