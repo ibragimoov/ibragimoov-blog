@@ -3,7 +3,7 @@
 ## [Live Link: 🔗](http://ibragimoov-blog.vercel.app/)
 
 ## About the Project: 📚
-I have collected all the top and most relevant topics on the + React frontend for 2022, which should be useful to me for employment
+Why not start a blog where you can publish your thoughts for society
 
 ## Screenshots: 📷
 ![1](https://i.imgupx.com/ziTRmaMv/screenshot_app.png)
